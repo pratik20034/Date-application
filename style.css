@@ -1,41 +1,281 @@
 body{
     margin:0;
-    background: linear-gradient(135deg,#ff758c,#ff7eb3);
-    height:100vh;
-    overflow:hidden;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
+    background:linear-gradient(135deg,#ff758c,#ff7eb3);
     font-family:Arial;
+    overflow:hidden;
 }
 
-.container{
+.section{
+    width:100vw;
+    height:100vh;
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
     text-align:center;
+
+    color:white;
+}
+
+.active{
+    display:flex;
 }
 
 h1{
-    color:white;
-    font-size:55px;
+    font-size:70px;
 }
 
 button{
-    padding:15px 40px;
-    font-size:25px;
+
+    padding:18px 40px;
+
     border:none;
+
     border-radius:40px;
+
+    font-size:24px;
+
     cursor:pointer;
+
+    background:#ff1493;
+
+    color:white;
+
+    margin:20px;
+
 }
 
-#yesBtn{
-    background:#ff1493;
-    color:white;
-    margin-right:20px;
+.card{
+
+    width:600px;
+
+    background:white;
+
+    color:#555;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+
+.card h1{
+    color:#ff1493;
+}
+
+.card p{
+    font-size:25px;
+    line-height:40px;
 }
 
 #noBtn{
-    background:white;
-    color:red;
     position:absolute;
+}
+
+.petal{
+    position:absolute;
+
+    top:-50px;
+
+    color:white;
+
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+
+    from{
+
+        transform:translateY(-50px);
+
+    }
+
+    to{
+
+        transform:translateY(110vh);
+
+    }
+
+}
+.answer{
+
+    background:#ff1493;
+
+    color:white;
+
+    margin:15px;
+
+    min-width:250px;
+
+}
+
+.answer:hover{
+
+    transform:scale(1.05);
+
+}
+
+#question{
+
+    color:#ff1493;
+
+    margin-bottom:40px;
+
+}
+
+#gameArea{
+
+    position:relative;
+
+    width:100vw;
+
+    height:60vh;
+
+    overflow:hidden;
+
+}
+
+.heartGame{
+
+    position:absolute;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+    animation:drop 5s linear forwards;
+
+}
+
+@keyframes drop{
+
+    from{
+
+        top:-50px;
+
+    }
+
+    to{
+
+        top:100%;
+
+    }
+
+}
+
+#spinBtn{
+
+    background:#ff1493;
+
+}
+
+#rouletteResult{
+
+    color:#ff1493;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+.celebrationHeart{
+
+    position:absolute;
+
+    top:-50px;
+
+    font-size:35px;
+
+    animation:celebrate linear infinite;
+
+}
+
+@keyframes celebrate{
+
+    from{
+
+        transform:
+        translateY(-50px);
+
+    }
+
+    to{
+
+        transform:
+        translateY(110vh);
+
+    }
+
+}
+
+/* ===========================
+   NASA PAGE
+=========================== */
+
+#nasa{
+
+    background:linear-gradient(
+        to bottom,
+        #020111,
+        #191970,
+        #000814
+    );
+
+}
+
+#nasa .card{
+
+    width:650px;
+
+    background:rgba(255,255,255,0.08);
+
+    border:2px solid rgba(255,255,255,.3);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 0 50px rgba(255,255,255,.2);
+
+}
+
+#nasa h1{
+
+    color:white;
+
+}
+
+#nasa h2{
+
+    color:white;
+
+    line-height:25px;
+
+}
+
+
+/* ===========================
+   FINAL PAGE
+=========================== */
+
+#final .card{
+
+    width:700px;
+
+}
+
+#final p{
+
+    font-size:22px;
+
+    line-height:20px;
+
+    margin:18px 0;
+
 }

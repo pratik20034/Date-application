@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date Permission Form ❤️</title>
+    <title>Our Love Story ❤️</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<audio id="bgMusic" loop>
+    <source src="love.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- HOME -->
+<div class="section active" id="home">
 
     <h1>❤️ Will You Date Me? 🥺❤️</h1>
 
     <div class="buttons">
+
         <button id="yesBtn">
             Yes ❤️
         </button>
@@ -21,10 +28,257 @@
         <button id="noBtn">
             No 😢
         </button>
+
     </div>
 
 </div>
 
+
+
+<!-- LOVE LETTER -->
+<div class="section" id="letter">
+
+    <div class="card">
+
+        <h1>♥ Dear Love ♥</h1>
+
+        <p>
+            Thank you for giving me a chance.
+        </p>
+
+        <p>
+            I promise to make memories full
+            of laughter, smiles and happiness.
+        </p>
+
+        <p>
+            Love,<br><br>
+            ETHAN ♥
+        </p>
+
+        <button id="letterNext">
+            Continue ♥
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- FLOWER PAGE -->
+<div class="section" id="petals">
+
+    <h1>
+        Every moment with you<br>
+        feels like spring ♥
+    </h1>
+
+    <button id="petalNext">
+        Continue ♥
+    </button>
+
+</div>
+
+
+
+<!-- TREASURE HUNT -->
+<div class="section" id="treasure">
+
+    <div class="card">
+
+        <h1>🔑 Treasure Hunt 🔑</h1>
+
+        <h2 id="question">
+            Who's the cutest person? ❤️
+        </h2>
+
+        <div class="buttons">
+
+            <button class="answer">
+                Me 😎
+            </button>
+
+            <button class="answer">
+                You 😘
+            </button>
+
+            <button class="answer">
+                Both Of Us 🥰
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- HEART GAME -->
+<div class="section" id="game">
+
+    <h1>🎮 Catch The Hearts ❤️</h1>
+
+    <h2>
+        Score:
+        <span id="score">
+            0
+        </span>
+        / 10
+    </h2>
+
+    <div id="gameArea">
+
+    </div>
+
+    <button id="gameNext"
+            style="display:none;">
+        Continue ❤️
+    </button>
+
+</div>
+
+<!-- LOVE ROULETTE -->
+<div class="section" id="roulette">
+
+    <div class="card">
+
+        <h1>🎲 Love Roulette ❤️</h1>
+
+        <h2 id="rouletteTitle">
+
+            Stage 1: What are we doing? ❤️
+
+        </h2>
+
+        <h2 id="rouletteResult">
+
+            Press Spin ❤️
+
+        </h2>
+
+        <button id="spinBtn">
+
+            Spin 🎲
+
+        </button>
+
+        <button id="rouletteNext"
+                style="display:none;">
+
+            Continue ❤️
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- NASA PAGE -->
+<div class="section" id="nasa">
+
+    <div class="card">
+
+        <h1>🚀 Mission Control</h1>
+
+        <h2>
+
+            Mission Name:<br>
+
+            Operation Love ❤️
+
+        </h2>
+
+        <h2>
+
+            Destination:<br>
+
+            A Beautiful Journey Together ✨
+
+        </h2>
+
+        <h2>
+
+            Status:<br>
+
+            Mission Successful 🚀
+
+        </h2>
+
+        <button id="nasaNext">
+
+            Continue ❤️
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- FINAL PAGE -->
+
+<div class="section" id="final">
+
+    <div class="card">
+
+        <h1>
+
+            ❤️ Thank You ❤️
+
+        </h1>
+
+        <p>
+
+            Thank you for giving me a chance.
+
+        </p>
+
+        <p>
+
+            I promise to make memories
+            filled with laughter,
+            smiles and happiness.
+
+        </p>
+
+        <p>
+
+            No matter where life takes us,
+            I hope we create something
+            beautiful together.
+
+        </p>
+
+        <p>
+
+            And I hope this is only
+            the beginning of our story. ❤️
+
+        </p>
+
+        <p>
+
+            Forever Yours,
+
+            <br><br>
+
+            ETHAN ♥
+
+        </p>
+
+        <button id="surpriseBtn">
+
+            ❤️ One Last Surprise ❤️
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- SCRIPT MUST BE LAST -->
 <script src="script.js"></script>
 
 </body>

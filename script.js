@@ -5,26 +5,17 @@ const yesBtn = document.getElementById("yesBtn");
 noBtn.style.left = "60%";
 noBtn.style.top = "55%";
 
-// Run away
-noBtn.addEventListener("mouseover", ()=>{
-
-    let x = Math.random() * (window.innerWidth - 150);
-    let y = Math.random() * (window.innerHeight - 100);
-
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-
-    const messages = [
-    "One chance, just press YES 🥺❤️",
-    "Are you really trying to say no? 😭",
-    "Pretty please? 🥹💕",
-    "I promise I'll make you smile ❤️",
-    "Come on, don't break my heart 😢💔",
-    "The YES button is feeling lonely 🥺",
-    "Just imagine our cute dates together 🌹❤️",
-    "I already know you'd look adorable beside me 😘",
-    "You caught me, I really like you ❤️🥰",
-    "Fine... I'll stop running if you press YES 😆💕"
+const messages = [
+"One chance, just press YES 🥺❤️",
+"Are you really trying to say no? 😭",
+"Pretty please? 🥹💕",
+"I promise I'll make you smile ❤️",
+"Come on, don't break my heart 😢💔",
+"The YES button is feeling lonely 🥺",
+"Just imagine our cute dates together 🌹❤️",
+"I already know you'd look adorable beside me 😘",
+"You caught me, I really like you ❤️🥰",
+"Fine... I'll stop running if you press YES 😆💕"
 ];
 
 let index = 0;
@@ -44,7 +35,7 @@ noBtn.addEventListener("mouseover", ()=>{
     if(index >= messages.length){
         index = 0;
     }
-});
+
 });
 
 // Yes button
